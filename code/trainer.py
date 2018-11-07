@@ -426,7 +426,8 @@ class condGANTrainer(object):
                         im = im.astype(np.uint8)
                         im = np.transpose(im, (1, 2, 0))
                         im = Image.fromarray(im)
-                        fullpath = '%s_s%d.png' % (s_tmp, k)
+                        # fullpath = '%s_s%d.png' % (s_tmp, k)
+                        fullpath = '%s.jpg' % (s_tmp)
                         im.save(fullpath)
 
     def gen_example(self, data_dic):
